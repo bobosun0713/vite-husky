@@ -4,15 +4,9 @@ const createAliasSetting = require('@vue/eslint-config-airbnb/createAliasSetting
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
     node: true,
   },
-  extends: [
-    'plugin:vue/strongly-recommended',
-    '@vue/eslint-config-airbnb',
-  ],
-  overrides: [
-  ],
+  extends: ["@vue/airbnb","plugin:import/recommended", "plugin:vue/strongly-recommended", "prettier", "prettier/prettier"],
   plugins: ['vue', 'simple-import-sort', 'import'],
   rules: {
     'vue/multi-word-component-names': 'error',

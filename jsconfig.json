@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
+    "target": "ES2020",
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "module": "ES2020",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@views/*": ["./src/views/*"],
+      "@mixins/*": ["./src/mixins/*"],
+      "@store/*": ["./src/store/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "dist", "temp"],
+  "include": ["src/**/*", "src/**/*.vue"]
 }

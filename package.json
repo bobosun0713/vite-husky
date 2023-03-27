@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --fix src/*.{js,vue} && eslint --fix src/**/*.{js,vue}"
   },
   "dependencies": {
     "vue": "2.6.14",
